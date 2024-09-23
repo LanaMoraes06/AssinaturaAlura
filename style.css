@@ -1,0 +1,580 @@
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #000000;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #3c92fa;
+}
+
+label{
+  text-align: center;
+  font-size: 30px;
+  margin-left: 20%
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/Design\ sem\ nome.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    color: #ffffff80;
+  text-shadow: none;
+  background: transparent;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: 0.5s ease;
+  user-select: none;
+}
+#btn:hover,
+:focus {
+  color: #ffffff;
+  background: #008cff;
+  border: 1px solid #008cff;
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
+    0 0 100px #008cff;
+}
+
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.secundario__imagem {
+    width: 90%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+    margin-top: 20%;
+}
+
+.descricao__texto {
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
+}
+
+.lista__link a:active {
+    color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+.card {
+    position: relative;
+  width: 350px;
+  height: 150px;
+  background: #191414;
+  border-radius: 10px;
+  padding: 10px;
+  margin-left: 29px;
+  margin-top: -250px;
+    
+  }
+  
+  .top {
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .pfp {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    height: 40px;
+    width: 50px;
+    background-color: #d2d2d2;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .title-1 {
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  
+  .title-2 {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .time {
+    width: 90%;
+    background-color: #5e5e5e;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: 5%;
+    bottom: 22px;
+  }
+  
+  .elapsed {
+    width: 42%;
+    background-color: #1db954;
+    height: 100%;
+    border-radius: 3px;
+  }
+  
+  .controls {
+    color: white;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .volume {
+    height: 100%;
+    width: 48px;
+  }
+  
+  .air {
+    height: 100%;
+    width: 48px;
+  }
+  
+  .controls svg {
+    cursor: pointer;
+    transition: 0.1s;
+  }
+  
+  .controls svg:hover {
+    color: #1db954;
+  }
+  
+  .volume {
+    opacity: 0;
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .volume .slider {
+    height: 4px;
+    background-color: #5e5e5e;
+    width: 80%;
+    border-radius: 2px;
+    margin-top: 8px;
+    margin-left: 10%;
+  }
+  
+  .volume .slider .green {
+    background-color: #1db954;
+    height: 100%;
+    width: 80%;
+    border-radius: 3px;
+  }
+  
+  .volume .circle {
+    background-color: white;
+    height: 6px;
+    width: 6px;
+    border-radius: 3px;
+    position: absolute;
+    right: 20%;
+    top: 60%;
+  }
+  
+  .volume_button:hover ~ .volume {
+    opacity: 1;
+  }
+  
+  .timetext {
+    color: white;
+    font-size: 8px;
+    position: absolute;
+  }
+  
+  .time_now {
+    bottom: 11px;
+    left: 10px;
+  }
+  
+  .time_full {
+    bottom: 11px;
+    right: 10px;
+  }
+  
+  .playing {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 1px;
+    width: 30px;
+    height: 20px;
+  }
+  
+  .greenline {
+    background-color: #1db954;
+    height: 20px;
+    width: 2px;
+    position: relative;
+    transform-origin: bottom;
+  }
+  
+  .line-1 {
+    animation: infinite playing 1s ease-in-out;
+    animation-delay: 0.2s;
+  }
+  
+  .line-2 {
+    animation: infinite playing 1s ease-in-out;
+    animation-delay: 0.5s;
+  }
+  
+  .line-3 {
+    animation: infinite playing 1s ease-in-out;
+    animation-delay: 0.6s;
+  }
+  
+  .line-4 {
+    animation: infinite playing 1s ease-in-out;
+    animation-delay: 0s;
+  }
+  
+  .line-5 {
+    animation: infinite playing 1s ease-in-out;
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes playing {
+    0% {
+      transform: scaleY(0.1);
+    }
+  
+    33% {
+      transform: scaleY(0.6);
+    }
+  
+    66% {
+      transform: scaleY(0.9);
+    }
+  
+    100% {
+      transform: scaleY(0.1);
+    }
+  }
+  .icon{
+    width: 30px;
+    margin-right: 90%;
+  }
+  .amarelado{
+    margin-top: -100%;
+    margin-left: 70%;
+  }
+  .amarelinha{
+    margin-bottom: 2%;
+  }
+  .amarelo{
+    margin-left: 34%;
+  }
+  .more{
+    margin-left: 80px;
+    width: 250px;
+    text-align: center;
+    height: 80px; 
+    background-color: transparent; 
+    border: 1px solid #ffffff; 
+    border-radius: 15px;
+    margin-top: 4%;
+  }
+  h2{
+    margin-top: 27px;
+  }
+  /* From Uiverse.io by mrhyddenn */ 
+.loader {
+  position: relative;
+  transform: scale(2);
+  border-radius: 50%;
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  color: white;
+  margin-left: 14%;
+}
+
+.loader::after {
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid #fff;
+  content: '';
+  left: 14px;
+  border-radius: 1px;
+  top: 4px;
+  animation-duration: 1s;
+}
+
+.loader::before {
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  display: block;
+  border-left: 1px solid #fff;
+  content: '';
+  left: 14px;
+  border-radius: 1px;
+  top: 4px;
+  animation-duration: 40s;
+}
+
+.loader::before,.loader::after {
+  transform-origin: bottom;
+  animation-name: dial;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes dial {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.cara{
+  font-size: 30px;
+  margin-left: 400px;
+  margin-top: -90px;
+  display: flex;
+}
+
+::-webkit-scrollbar {
+  width: 8px;  
+  height: 8px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.5); 
+  border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(3, 76, 233, 0.7); 
+}
+.iloveu{
+  margin-left: 30px;
+}
+/* From Uiverse.io by EddyBel */ 
+/* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 3.5em;
+  height: 2em;
+  margin-top: 50px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  animation: toggle__animation 3s infinite;
+}
+
+.switch::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  filter: blur(20px);
+  z-index: -1;
+  border-radius: 50px;
+  background-color: #d8ff99;
+  background-image: radial-gradient(at 21% 46%, hsla(183,65%,60%,1) 0px, transparent 50%),
+radial-gradient(at 23% 25%, hsla(359,74%,70%,1) 0px, transparent 50%),
+radial-gradient(at 20% 1%, hsla(267,83%,75%,1) 0px, transparent 50%),
+radial-gradient(at 86% 87%, hsla(204,69%,68%,1) 0px, transparent 50%),
+radial-gradient(at 99% 41%, hsla(171,72%,77%,1) 0px, transparent 50%),
+radial-gradient(at 55% 24%, hsla(138,60%,62%,1) 0px, transparent 50%);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fdfefedc;
+  transition: .4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  left: 0.3em;
+  bottom: 0.35em;
+  transition: .4s;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -10px 10px 0px inset,
+     rgba(0, 0, 0, 0.09) 0px -1px 15px -8px;
+  background-color: #ff99fd;
+  background-image: radial-gradient(at 81% 39%, hsla(327,79%,79%,1) 0px, transparent 50%),
+  radial-gradient(at 11% 72%, hsla(264,64%,79%,1) 0px, transparent 50%),
+  radial-gradient(at 23% 20%, hsla(75,98%,71%,1) 0px, transparent 50%);
+}
+
+.input__check:checked + .slider {
+  background-color: #17202A;
+}
+
+.input__check:checked + .slider:before {
+  transform: translateX(1.5em);
+}
+
+@keyframes toggle__animation {
+  0%, 100% {
+    transform: translateY(-10px) rotateX(15deg) rotateY(-20deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotateX(15deg) rotateY(-20deg);
+  }
+}
+.imgh{
+  width: 30px;
+}
